@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Tracker.Web.Models.InventoryView>
+
+@{
+    ViewBag.Title = "Tag Inventory";
+}
+
+<h2>Tag Inventory</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TagFriendlyName)
+        </th>
+        <th>
+            Last @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            Last @Html.DisplayNameFor(model => model.Reading)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TagFriendlyName)
+        </td>
+ 
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reading)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Tracker - Web Interface";
+}
+
+<div class="jumbotron">
+    <h1>Tracker</h1>
+    <p class="lead">An online interface to find out where your stuff is</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>Register your monitors and their physical locations</p>
+        <p>@Html.ActionLink("Register Monitors", "Index", "Monitor")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Add Your Stuff</h2>
+        <p>Register your items with tags</p>
+        <p>@Html.ActionLink("Register Tags", "Index", "Tag")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Gain Insight</h2>
+        <p>Find out where your stuff is, or the last known location it was seen</p>
+        <p>@Html.ActionLink("Inventory Tags","Index","Inventory")</p>
+    </div>
+</div>
